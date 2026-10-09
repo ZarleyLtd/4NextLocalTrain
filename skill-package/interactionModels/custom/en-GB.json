@@ -1,0 +1,1778 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "four next local train",
+      "intents": [
+        {
+          "name": "NextLocalTrainIntent",
+          "slots": [
+            {
+              "name": "station",
+              "type": "LOCAL_TRAIN_STATION"
+            },
+            {
+              "name": "direction",
+              "type": "LOCAL_TRAIN_DIRECTION"
+            }
+          ],
+          "samples": [
+            "from {station} {direction}",
+            "from {station} towards {direction}",
+            "from {station} toward {direction}",
+            "from {station} to {direction}",
+            "{station} towards {direction}",
+            "{station} to {direction}",
+            "{direction} from {station}",
+            "{station} {direction}",
+            "{direction}",
+            "to get trains from {station} {direction}",
+            "to get the next train from {station} {direction}",
+            "to get the next commuter from {station} {direction}",
+            "trains from {station} {direction}",
+            "commuter from {station} {direction}",
+            "the next train from {station} {direction}",
+            "the next commuter from {station} {direction}",
+            "when is the next train from {station} {direction}",
+            "when is the next commuter from {station} {direction}",
+            "what's the next train from {station} {direction}",
+            "next train from {station} {direction}",
+            "next commuter from {station} {direction}",
+            "from {station} going {direction}",
+            "from {station} heading {direction}",
+            "{station} going {direction}",
+            "{station} heading {direction}",
+            "from station {station} {direction}",
+            "next train",
+            "next trains",
+            "next commuter",
+            "the next train",
+            "the next commuter",
+            "for the next train",
+            "for the next commuter",
+            "when is the next train",
+            "when is my next train",
+            "what's the next train",
+            "what time is the next train",
+            "from my favourite stop",
+            "from my stop",
+            "for my stop",
+            "trains from my favourite stop",
+            "the next train from my favourite stop"
+          ]
+        },
+        {
+          "name": "NextLocalTrainQueryIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "for {query}",
+            "from {query}",
+            "about {query}",
+            "trains from {query}",
+            "commuter from {query}",
+            "the next train from {query}",
+            "the next commuter from {query}",
+            "next train from {query}",
+            "from station {query}",
+            "to get trains from {query}"
+          ]
+        },
+        {
+          "name": "SetFavouriteStopIntent",
+          "slots": [
+            {
+              "name": "station",
+              "type": "LOCAL_TRAIN_STATION"
+            },
+            {
+              "name": "direction",
+              "type": "LOCAL_TRAIN_DIRECTION"
+            }
+          ],
+          "samples": [
+            "to set my favourite stop to {station}",
+            "set my favourite stop to {station}",
+            "set my favourite stop to {station} {direction}",
+            "set favourite stop {station} {direction}",
+            "set my favourite stop",
+            "to set my favourite stop",
+            "to set my favorite stop",
+            "set my favorite stop",
+            "change my favourite stop to {station}",
+            "to change my favourite stop to {station}",
+            "change my favourite stop to {station} {direction}",
+            "make {station} my favourite stop",
+            "make {station} {direction} my favourite",
+            "remember {station}",
+            "to remember {station} {direction}",
+            "save {station}",
+            "to save {station} as my favourite",
+            "my stop is {station}",
+            "my stop is {station} {direction}",
+            "to set my favorite stop to {station}",
+            "set my favorite stop to {station}",
+            "to set my favourite stop to {station} {direction}",
+            "to set my favorite stop to {station} {direction}"
+          ]
+        },
+        {
+          "name": "SetFavouriteQueryIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "to set my favourite stop to {query}",
+            "set my favourite stop to {query}",
+            "to set my favorite stop to {query}",
+            "set my favorite stop to {query}",
+            "remember {query}",
+            "to remember {query}"
+          ]
+        },
+        {
+          "name": "GetFavouriteStopIntent",
+          "slots": [],
+          "samples": [
+            "for my favourite stop",
+            "what is my favourite stop",
+            "what's my favourite stop",
+            "which stop is my favourite",
+            "to remind me of my favourite stop",
+            "what stop is saved",
+            "for my favorite stop",
+            "what is my favorite stop"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "LOCAL_TRAIN_STATION",
+          "values": [
+            {
+              "name": {
+                "value": "Adamstown",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Arklow",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Ashtown",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Balbriggan",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Ballymote",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Blackrock",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Boyle",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Bray",
+                "synonyms": [
+                  "Bray (Daly)",
+                  "Bray Daly",
+                  "bray daly",
+                  "daly"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Broombridge",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Cahir",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Carrick-on-Shannon",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Carrick-on-Suir",
+                "synonyms": [
+                  "carrick on suir"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Carrigaloe",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Carrigtwohill",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Castleknock",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Clondalkin",
+                "synonyms": [
+                  "Clondalkin Fonthill",
+                  "fonthill"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Clongriffin",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Clonmel",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Clonsilla",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Cobh",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Collooney",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Connolly",
+                "synonyms": [
+                  "connolly station",
+                  "dublin connolly"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Coolmine",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Docklands",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Donabate",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Drogheda",
+                "synonyms": [
+                  "Drogheda (MacBride)",
+                  "macbride"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dromod",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Drumcondra",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Dun Laoghaire",
+                "synonyms": [
+                  "Dun Laoghaire (Mallin)",
+                  "Dun Laoghaire Mallin",
+                  "dunleary",
+                  "dun laoire",
+                  "mallin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dunboyne",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Dundalk",
+                "synonyms": [
+                  "Dundalk (Clarke)",
+                  "clarke"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Edgeworthstown",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Enfield Stn",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Enniscorthy",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Fota",
+                "synonyms": [
+                  "fota wildlife park"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Glounthaune",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Gorey",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Gormanston Stn",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Grand Canal Dock",
+                "synonyms": [
+                  "grand canal",
+                  "gcd"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Greystones",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Hansfield",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Hazelhatch",
+                "synonyms": [
+                  "Hazelhatch and Celbridge",
+                  "celbridge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Heuston",
+                "synonyms": [
+                  "Dublin Heuston",
+                  "heuston station",
+                  "dublin heuston",
+                  "kingsbridge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Howth Junction",
+                "synonyms": [
+                  "Howth Junction and Donaghmede",
+                  "donaghmede"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kent",
+                "synonyms": [
+                  "Cork (Kent)",
+                  "Cork",
+                  "Cork Kent",
+                  "kent station",
+                  "cork kent",
+                  "cork station"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kilcock",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Kilcoole",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Kildare",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Kishoge",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Lansdowne",
+                "synonyms": [
+                  "Lansdowne Road",
+                  "lansdowne rd",
+                  "aviva",
+                  "aviva stadium"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Laytown Station",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Leixlip(Confey)",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Leixlip(Louisa Bridge)",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Limerick Junction",
+                "synonyms": [
+                  "limerick jct"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Little Island",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Longford",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "M3 Parkway",
+                "synonyms": [
+                  "m3"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Malahide",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Mallow",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Maynooth",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Midleton",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Monasterevin",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Mullingar",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Navan Road Parkway",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Newbridge",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Park West",
+                "synonyms": [
+                  "Park West and Cherry Orchard",
+                  "cherry orchard"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Pearse",
+                "synonyms": [
+                  "Dublin Pearse",
+                  "pearse station",
+                  "dublin pearse",
+                  "pearse street",
+                  "westland row"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Pelletstown",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Portarlington",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Portlaoise",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Portmarnock",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Rathdrum",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Rosslare Europort",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Rosslare Strand",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Rush and Lusk",
+                "synonyms": [
+                  "lusk"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rushbrooke",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Sallins",
+                "synonyms": [
+                  "Sallins and Naas",
+                  "naas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Skerries",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Sligo (MacDiarmada)",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Sydney Parade",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Tara Street",
+                "synonyms": [
+                  "tara",
+                  "tara st"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tipperary",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Waterford (Plunkett)",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Wexford (O Hanrahan)",
+                "synonyms": []
+              }
+            },
+            {
+              "name": {
+                "value": "Wicklow",
+                "synonyms": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "LOCAL_TRAIN_DIRECTION",
+          "values": [
+            {
+              "name": {
+                "value": "northbound",
+                "synonyms": [
+                  "north",
+                  "north bound",
+                  "going north",
+                  "heading north",
+                  "going northbound"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "southbound",
+                "synonyms": [
+                  "south",
+                  "south bound",
+                  "going south",
+                  "heading south",
+                  "going southbound"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "eastbound",
+                "synonyms": [
+                  "east",
+                  "east bound",
+                  "going east",
+                  "heading east",
+                  "going eastbound"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "westbound",
+                "synonyms": [
+                  "west",
+                  "west bound",
+                  "going west",
+                  "heading west",
+                  "going westbound"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "the city",
+                "synonyms": [
+                  "city",
+                  "city centre",
+                  "city center",
+                  "into town",
+                  "town",
+                  "towards the city",
+                  "toward the city",
+                  "to the city"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dundalk",
+                "synonyms": [
+                  "towards Dundalk",
+                  "toward Dundalk",
+                  "to Dundalk"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Drogheda",
+                "synonyms": [
+                  "towards Drogheda",
+                  "toward Drogheda",
+                  "to Drogheda"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Maynooth",
+                "synonyms": [
+                  "towards Maynooth",
+                  "toward Maynooth",
+                  "to Maynooth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Longford",
+                "synonyms": [
+                  "towards Longford",
+                  "toward Longford",
+                  "to Longford"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "M3 Parkway",
+                "synonyms": [
+                  "towards M3 Parkway",
+                  "toward M3 Parkway",
+                  "to M3 Parkway"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Portlaoise",
+                "synonyms": [
+                  "towards Portlaoise",
+                  "toward Portlaoise",
+                  "to Portlaoise"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Hazelhatch",
+                "synonyms": [
+                  "towards Hazelhatch",
+                  "toward Hazelhatch",
+                  "to Hazelhatch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Gorey",
+                "synonyms": [
+                  "towards Gorey",
+                  "toward Gorey",
+                  "to Gorey"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cobh",
+                "synonyms": [
+                  "towards Cobh",
+                  "toward Cobh",
+                  "to Cobh"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Midleton",
+                "synonyms": [
+                  "towards Midleton",
+                  "toward Midleton",
+                  "to Midleton"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Mallow",
+                "synonyms": [
+                  "towards Mallow",
+                  "toward Mallow",
+                  "to Mallow"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Limerick Junction",
+                "synonyms": [
+                  "towards Limerick Junction",
+                  "toward Limerick Junction",
+                  "to Limerick Junction"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Waterford",
+                "synonyms": [
+                  "towards Waterford",
+                  "toward Waterford",
+                  "to Waterford"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Heuston",
+                "synonyms": [
+                  "towards Heuston",
+                  "toward Heuston",
+                  "to Heuston"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Connolly",
+                "synonyms": [
+                  "towards Connolly",
+                  "toward Connolly",
+                  "to Connolly"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Pearse",
+                "synonyms": [
+                  "towards Pearse",
+                  "toward Pearse",
+                  "to Pearse"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kent",
+                "synonyms": [
+                  "towards Kent",
+                  "toward Kent",
+                  "to Kent"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Bray",
+                "synonyms": [
+                  "towards Bray",
+                  "toward Bray",
+                  "to Bray"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Greystones",
+                "synonyms": [
+                  "towards Greystones",
+                  "toward Greystones",
+                  "to Greystones"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Adamstown",
+                "synonyms": [
+                  "towards Adamstown",
+                  "toward Adamstown",
+                  "to Adamstown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Grand Canal Dock",
+                "synonyms": [
+                  "towards Grand Canal Dock",
+                  "toward Grand Canal Dock",
+                  "to Grand Canal Dock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Newbridge",
+                "synonyms": [
+                  "towards Newbridge",
+                  "toward Newbridge",
+                  "to Newbridge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Arklow",
+                "synonyms": [
+                  "towards Arklow",
+                  "toward Arklow",
+                  "to Arklow"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Wicklow",
+                "synonyms": [
+                  "towards Wicklow",
+                  "toward Wicklow",
+                  "to Wicklow"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Ashtown",
+                "synonyms": [
+                  "towards Ashtown",
+                  "toward Ashtown",
+                  "to Ashtown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Docklands",
+                "synonyms": [
+                  "towards Docklands",
+                  "toward Docklands",
+                  "to Docklands"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Mullingar",
+                "synonyms": [
+                  "towards Mullingar",
+                  "toward Mullingar",
+                  "to Mullingar"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dun Laoghaire",
+                "synonyms": [
+                  "towards Dun Laoghaire",
+                  "toward Dun Laoghaire",
+                  "to Dun Laoghaire"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Balbriggan",
+                "synonyms": [
+                  "towards Balbriggan",
+                  "toward Balbriggan",
+                  "to Balbriggan"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Ballymote",
+                "synonyms": [
+                  "towards Ballymote",
+                  "toward Ballymote",
+                  "to Ballymote"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dromod",
+                "synonyms": [
+                  "towards Dromod",
+                  "toward Dromod",
+                  "to Dromod"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Blackrock",
+                "synonyms": [
+                  "towards Blackrock",
+                  "toward Blackrock",
+                  "to Blackrock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Boyle",
+                "synonyms": [
+                  "towards Boyle",
+                  "toward Boyle",
+                  "to Boyle"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Broombridge",
+                "synonyms": [
+                  "towards Broombridge",
+                  "toward Broombridge",
+                  "to Broombridge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cahir",
+                "synonyms": [
+                  "towards Cahir",
+                  "toward Cahir",
+                  "to Cahir"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Waterford (Plunkett)",
+                "synonyms": [
+                  "towards Waterford (Plunkett)",
+                  "toward Waterford (Plunkett)",
+                  "to Waterford (Plunkett)"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Carrick-on-Shannon",
+                "synonyms": [
+                  "towards Carrick-on-Shannon",
+                  "toward Carrick-on-Shannon",
+                  "to Carrick-on-Shannon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Carrick-on-Suir",
+                "synonyms": [
+                  "towards Carrick-on-Suir",
+                  "toward Carrick-on-Suir",
+                  "to Carrick-on-Suir"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Carrigaloe",
+                "synonyms": [
+                  "towards Carrigaloe",
+                  "toward Carrigaloe",
+                  "to Carrigaloe"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Carrigtwohill",
+                "synonyms": [
+                  "towards Carrigtwohill",
+                  "toward Carrigtwohill",
+                  "to Carrigtwohill"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Castleknock",
+                "synonyms": [
+                  "towards Castleknock",
+                  "toward Castleknock",
+                  "to Castleknock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Clondalkin",
+                "synonyms": [
+                  "towards Clondalkin",
+                  "toward Clondalkin",
+                  "to Clondalkin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Clongriffin",
+                "synonyms": [
+                  "towards Clongriffin",
+                  "toward Clongriffin",
+                  "to Clongriffin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Clonmel",
+                "synonyms": [
+                  "towards Clonmel",
+                  "toward Clonmel",
+                  "to Clonmel"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Clonsilla",
+                "synonyms": [
+                  "towards Clonsilla",
+                  "toward Clonsilla",
+                  "to Clonsilla"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Collooney",
+                "synonyms": [
+                  "towards Collooney",
+                  "toward Collooney",
+                  "to Collooney"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Coolmine",
+                "synonyms": [
+                  "towards Coolmine",
+                  "toward Coolmine",
+                  "to Coolmine"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Donabate",
+                "synonyms": [
+                  "towards Donabate",
+                  "toward Donabate",
+                  "to Donabate"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Drumcondra",
+                "synonyms": [
+                  "towards Drumcondra",
+                  "toward Drumcondra",
+                  "to Drumcondra"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dunboyne",
+                "synonyms": [
+                  "towards Dunboyne",
+                  "toward Dunboyne",
+                  "to Dunboyne"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Edgeworthstown",
+                "synonyms": [
+                  "towards Edgeworthstown",
+                  "toward Edgeworthstown",
+                  "to Edgeworthstown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Enfield Stn",
+                "synonyms": [
+                  "towards Enfield Stn",
+                  "toward Enfield Stn",
+                  "to Enfield Stn"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Enniscorthy",
+                "synonyms": [
+                  "towards Enniscorthy",
+                  "toward Enniscorthy",
+                  "to Enniscorthy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Fota",
+                "synonyms": [
+                  "towards Fota",
+                  "toward Fota",
+                  "to Fota"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Glounthaune",
+                "synonyms": [
+                  "towards Glounthaune",
+                  "toward Glounthaune",
+                  "to Glounthaune"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Gormanston Stn",
+                "synonyms": [
+                  "towards Gormanston Stn",
+                  "toward Gormanston Stn",
+                  "to Gormanston Stn"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Hansfield",
+                "synonyms": [
+                  "towards Hansfield",
+                  "toward Hansfield",
+                  "to Hansfield"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Howth Junction",
+                "synonyms": [
+                  "towards Howth Junction",
+                  "toward Howth Junction",
+                  "to Howth Junction"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kilcock",
+                "synonyms": [
+                  "towards Kilcock",
+                  "toward Kilcock",
+                  "to Kilcock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kilcoole",
+                "synonyms": [
+                  "towards Kilcoole",
+                  "toward Kilcoole",
+                  "to Kilcoole"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kildare",
+                "synonyms": [
+                  "towards Kildare",
+                  "toward Kildare",
+                  "to Kildare"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kishoge",
+                "synonyms": [
+                  "towards Kishoge",
+                  "toward Kishoge",
+                  "to Kishoge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Lansdowne",
+                "synonyms": [
+                  "towards Lansdowne",
+                  "toward Lansdowne",
+                  "to Lansdowne"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Laytown Station",
+                "synonyms": [
+                  "towards Laytown Station",
+                  "toward Laytown Station",
+                  "to Laytown Station"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Leixlip(Confey)",
+                "synonyms": [
+                  "towards Leixlip(Confey)",
+                  "toward Leixlip(Confey)",
+                  "to Leixlip(Confey)"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Leixlip(Louisa Bridge)",
+                "synonyms": [
+                  "towards Leixlip(Louisa Bridge)",
+                  "toward Leixlip(Louisa Bridge)",
+                  "to Leixlip(Louisa Bridge)"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Little Island",
+                "synonyms": [
+                  "towards Little Island",
+                  "toward Little Island",
+                  "to Little Island"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Malahide",
+                "synonyms": [
+                  "towards Malahide",
+                  "toward Malahide",
+                  "to Malahide"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Monasterevin",
+                "synonyms": [
+                  "towards Monasterevin",
+                  "toward Monasterevin",
+                  "to Monasterevin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Navan Road Parkway",
+                "synonyms": [
+                  "towards Navan Road Parkway",
+                  "toward Navan Road Parkway",
+                  "to Navan Road Parkway"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Park West",
+                "synonyms": [
+                  "towards Park West",
+                  "toward Park West",
+                  "to Park West"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Pelletstown",
+                "synonyms": [
+                  "towards Pelletstown",
+                  "toward Pelletstown",
+                  "to Pelletstown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Portarlington",
+                "synonyms": [
+                  "towards Portarlington",
+                  "toward Portarlington",
+                  "to Portarlington"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Portmarnock",
+                "synonyms": [
+                  "towards Portmarnock",
+                  "toward Portmarnock",
+                  "to Portmarnock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rathdrum",
+                "synonyms": [
+                  "towards Rathdrum",
+                  "toward Rathdrum",
+                  "to Rathdrum"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rosslare Europort",
+                "synonyms": [
+                  "towards Rosslare Europort",
+                  "toward Rosslare Europort",
+                  "to Rosslare Europort"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rosslare Strand",
+                "synonyms": [
+                  "towards Rosslare Strand",
+                  "toward Rosslare Strand",
+                  "to Rosslare Strand"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rush and Lusk",
+                "synonyms": [
+                  "towards Rush and Lusk",
+                  "toward Rush and Lusk",
+                  "to Rush and Lusk"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rushbrooke",
+                "synonyms": [
+                  "towards Rushbrooke",
+                  "toward Rushbrooke",
+                  "to Rushbrooke"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Sallins",
+                "synonyms": [
+                  "towards Sallins",
+                  "toward Sallins",
+                  "to Sallins"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Skerries",
+                "synonyms": [
+                  "towards Skerries",
+                  "toward Skerries",
+                  "to Skerries"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Sligo (MacDiarmada)",
+                "synonyms": [
+                  "towards Sligo (MacDiarmada)",
+                  "toward Sligo (MacDiarmada)",
+                  "to Sligo (MacDiarmada)"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Sydney Parade",
+                "synonyms": [
+                  "towards Sydney Parade",
+                  "toward Sydney Parade",
+                  "to Sydney Parade"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tara Street",
+                "synonyms": [
+                  "towards Tara Street",
+                  "toward Tara Street",
+                  "to Tara Street"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tipperary",
+                "synonyms": [
+                  "towards Tipperary",
+                  "toward Tipperary",
+                  "to Tipperary"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Wexford (O Hanrahan)",
+                "synonyms": [
+                  "towards Wexford (O Hanrahan)",
+                  "toward Wexford (O Hanrahan)",
+                  "to Wexford (O Hanrahan)"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "NextLocalTrainIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "station",
+              "type": "LOCAL_TRAIN_STATION",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.station"
+              }
+            },
+            {
+              "name": "direction",
+              "type": "LOCAL_TRAIN_DIRECTION",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.direction"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SetFavouriteStopIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "station",
+              "type": "LOCAL_TRAIN_STATION",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.station"
+              }
+            },
+            {
+              "name": "direction",
+              "type": "LOCAL_TRAIN_DIRECTION",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.direction"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "SKILL_RESPONSE"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.station",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which station?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What's the name of the station?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.direction",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which direction?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Northbound, southbound, towards the city, or towards a terminus such as Dundalk, Maynooth, Portlaoise, Gorey, or Cobh?"
+          }
+        ]
+      }
+    ]
+  }
+}
